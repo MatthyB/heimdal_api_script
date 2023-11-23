@@ -186,7 +186,7 @@ def main(config_path):
 
             next_1hour_retrieval = current_time + timedelta(hours=1)
 
-        time.sleep(10)
+        #time.sleep(10)
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
