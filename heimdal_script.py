@@ -96,7 +96,6 @@ def main(config_path):
                         })
 
                 for customer_info in customer_data:
-                    if isinstance(event, dict):
                         customer_id = customer_info["customer_id"]
                         customer_name = customer_info["customer_name"]
 
@@ -117,8 +116,9 @@ def main(config_path):
 
                             # Add the customer name and module as JSON fields
                             for event in data:
-                                event["customer_name"] = customer_name
-                                event["heimdal_module"] = heimdal_module
+                                if isinstance(event, dict):
+                                    event["customer_name"] = customer_name
+                                    event["heimdal_module"] = heimdal_module
 
                             # Send the data to Logstash
                             try:
@@ -152,7 +152,6 @@ def main(config_path):
                         })
 
                 for customer_info in customer_data:
-                    if isinstance(event, dict):
                         customer_id = customer_info["customer_id"]
                         customer_name = customer_info["customer_name"]
 
@@ -173,8 +172,9 @@ def main(config_path):
 
                             # Add the customer name and module as JSON fields
                             for event in data:
-                                event["customer_name"] = customer_name
-                                event["heimdal_module"] = heimdal_module
+                                if isinstance(event, dict):
+                                    event["customer_name"] = customer_name
+                                    event["heimdal_module"] = heimdal_module
 
                             # Send the data to Logstash
                             try:
