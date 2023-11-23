@@ -96,8 +96,8 @@ def main(config_path):
                         })
 
                 for customer_info in customer_data:
-                        customer_id = customer_info["customer_id"]
-                        customer_name = customer_info["customer_name"]
+                    customer_id = customer_info["customer_id"]
+                    customer_name = customer_info["customer_name"]
 
                     for heimdal_module in heimdal_modules_15minutes:
                         # Calculate the start and end dates
@@ -152,8 +152,8 @@ def main(config_path):
                         })
 
                 for customer_info in customer_data:
-                        customer_id = customer_info["customer_id"]
-                        customer_name = customer_info["customer_name"]
+                    customer_id = customer_info["customer_id"]
+                    customer_name = customer_info["customer_name"]
 
                     for heimdal_module in heimdal_modules_1hours:
                         # Calculate the start and end dates
