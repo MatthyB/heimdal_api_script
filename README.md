@@ -14,7 +14,7 @@ Sample configuration file:
 [HeimdalConfig]
 base_url = https://dashboard.heimdalsecurity.com/api/heimdalapi/
 heimdal_modules_3days = customers
-heimdal_modules_15minutes = darklayerguard,vectorn,vigilancedetections,encryptiondetection,activeclients,threatPreventionNetwork
+heimdal_modules_15minutes = darklayerguard,vectorn,vigilancedetections,encryptiondetection,threatPreventionNetwork
 heimdal_modules_1hours = activeclients,thirdparty,microsoftupdates,xtp
 logstash_url = http://logstash-url:logstash-port/heimdal
 
