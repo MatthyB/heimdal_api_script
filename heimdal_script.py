@@ -124,7 +124,7 @@ def main(config_path):
                             try:
                                 response = requests.post(logstash_url, json=data)
                                 if response.status_code == 200:
-                                    print(f"Data sent to Logstash for customer: {customer_name}, module: {heimdal_module}")
+                                    print(f"{current_time}: Data sent to Logstash for customer: {customer_name}, module: {heimdal_module}")
                                 else:
                                     print(f"Failed to send data to Logstash for customer: {customer_name}, module: {heimdal_module}")
                             except Exception as e:
@@ -180,7 +180,7 @@ def main(config_path):
                             try:
                                 response = requests.post(logstash_url, json=data)
                                 if response.status_code == 200:
-                                    print(f"Data sent to Logstash for customer: {customer_name}, module: {heimdal_module}")
+                                    print(f"{current_time}: Data sent to Logstash for customer: {customer_name}, module: {heimdal_module}")
                                 else:
                                     print(f"Failed to send data to Logstash for customer: {customer_name}, module: {heimdal_module}")
                             except Exception as e:
