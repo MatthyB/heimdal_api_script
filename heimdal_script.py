@@ -126,7 +126,7 @@ def main(config_path):
                                 if response.status_code == 200:
                                     print(f"{current_time}: Data sent to Logstash for customer: {customer_name}, module: {heimdal_module}")
                                 else:
-                                    print(f"Failed to send data to Logstash for customer: {customer_name}, module: {heimdal_module}")
+                                    print(f"Failed to send data to Logstash for customer: {customer_name}, module: {heimdal_module}, error code: {response.status_code}")
                             except Exception as e:
                                 print(f"Error sending data to Logstash: {str(e)}")
 
@@ -182,7 +182,7 @@ def main(config_path):
                                 if response.status_code == 200:
                                     print(f"{current_time}: Data sent to Logstash for customer: {customer_name}, module: {heimdal_module}")
                                 else:
-                                    print(f"Failed to send data to Logstash for customer: {customer_name}, module: {heimdal_module}")
+                                    print(f"Failed to send data to Logstash for customer: {customer_name}, module: {heimdal_module}, error code: {response.status_code}")
                             except Exception as e:
                                 print(f"Error sending data to Logstash: {str(e)}")
 
